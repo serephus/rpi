@@ -11,17 +11,17 @@
   };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-raspberrypi = {
-      url = "github:nvmd/nixos-raspberrypi";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nvmd/nixos-raspberrypi/main";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
     disko.url = "github:nix-community/disko";
   };
 
   outputs =
     inputs@{
-      nixpkgs,
+      # nixpkgs,
       disko,
       nixos-raspberrypi,
       ...
