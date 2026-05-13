@@ -13,7 +13,7 @@
   inputs = {
     # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-raspberrypi = {
-      url = "github:nvmd/nixos-raspberrypi/main";
+      url = "github:nvmd/nixos-raspberrypi";
       # inputs.nixpkgs.follows = "nixpkgs";
     };
     disko.url = "github:nix-community/disko";
